@@ -1,0 +1,10 @@
+server:
+  port: 8082
+spring:
+  redisson:
+    config-file:
+      yaml: classpath:redisson-config.yml
+    cache-file:
+      yaml: classpath:redisson-cache.yml
+cache:
+  type: redisTemplate

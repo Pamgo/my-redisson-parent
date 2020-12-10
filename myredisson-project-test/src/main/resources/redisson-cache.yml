@@ -1,0 +1,5 @@
+---
+mycache:
+  ttl: 1440000
+  maxIdleTime: 720000
+  maxSize: 1024
