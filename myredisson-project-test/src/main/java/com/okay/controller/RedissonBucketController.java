@@ -73,6 +73,12 @@ public class RedissonBucketController {
         return ApiResult.ok(test);
     }
 
+    /**
+     * 自定义myCacheable 使用
+     * @param key
+     * @param hkey
+     * @return
+     */
     @GetMapping("/getMyCacheable")
     @MyCacheable(cacheName = "mycache", key = "#key+'_'+#hkey", expire = 1000, timeUnit = TimeUnit.SECONDS)
     public ApiResult getMyCacheable(@RequestParam("key") String key, @RequestParam("hkey") String hkey) {
