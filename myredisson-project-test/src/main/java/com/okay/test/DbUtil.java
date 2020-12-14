@@ -7,7 +7,7 @@ import java.util.UUID;
 /**
  * <h2><h2>
  *
- * @author pangy
+ * @author okay
  * @create 2020-07-20 11:41
  */
 public class DbUtil {
